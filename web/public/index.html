@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Морской бой — Голландский штурвал 2.0</title><meta name="description" content="Морской бой для двоих. Создайте комнату и пригласите друга."><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a href="/" class="brand"><span class="emblem">⚓</span> Голландский штурвал 2.0</a><span class="header-note">МОРСКОЙ БОЙ · ДЛЯ ДВОИХ</span><span id="connection" class="connection">● Сервер на связи</span></header>
+<main>
+<section id="lobby" class="lobby">
+<div class="intro"><p class="eyebrow">ВАША СЛЕДУЮЩАЯ МОРСКАЯ ДУЭЛЬ</p><h1>Два капитана.<br>Один океан.</h1><p class="lead">Расставьте флот, пригласите друга<br>и найдите его корабли раньше, чем он — ваши.</p><div class="fleet-art" aria-hidden="true"><div class="radar"></div><span class="art-ship a"></span><span class="art-ship b"></span><span class="art-ship c"></span><span class="art-dot">+</span></div><p class="intro-foot">10 × 10 КЛЕТОК <span>·</span> 10 КОРАБЛЕЙ <span>·</span> ЧЕСТНЫЙ БОЙ</p></div>
+<div class="lobby-card"><span class="step">01 / НА БОРТ</span><h2>Занять место капитана</h2><p>Без регистрации. Только вы и ваш соперник.</p><label for="name">Ваш позывной</label><input id="name" maxlength="24" placeholder="Например, Капитан Немо" autocomplete="nickname"><button id="create" class="primary">Создать комнату <span>↗</span></button><div class="divider">или войти в существующую</div><label for="code">Код приглашения</label><div class="join-row"><input id="code" maxlength="6" placeholder="A1B2C3" autocomplete="off"><button id="join">Войти →</button></div><p class="small">Отправьте другу ссылку на комнату — играйте с разных устройств.</p></div>
+<article class="review-card" aria-label="Отзыв игрока">
+<img class="review-photo" src="/reviewer-kuryan2010.png" alt="курьян2010 рядом с мотоциклом" width="1086" height="1448" loading="lazy">
+<div class="review-content"><p class="eyebrow">ОТЗЫВ ИГРОКА</p><div class="review-author"><strong>курьян2010</strong><span class="review-stars" aria-label="5 из 5 звёзд">★★★★★</span></div><blockquote>классная игра, играем всей мотобандой, не можем оторваться</blockquote></div>
+</article>
+</section>
+<section id="game" hidden>
+<div class="game-heading"><div><p class="eyebrow" id="phase">КОМНАТА</p><h1 id="game-title">Подготовка к бою</h1></div><div class="room-badge">КОМНАТА <strong id="room-code"></strong><button id="copy">Скопировать ссылку ↗</button></div></div>
+<div class="status-bar"><span id="status-light"></span><strong id="status"></strong><span id="event"></span></div>
+<div id="waiting" class="waiting" hidden><div class="waiting-icon">⚓</div><h2>Ждём второго капитана</h2><p>Отправьте другу ссылку кнопкой выше.<br>Как только он войдёт, начнётся расстановка.</p></div>
+<div id="arena" class="arena"><article class="board-card"><div class="board-heading"><div><span class="step">01 / ВАША АКВАТОРИЯ</span><h2 id="my-name">Ваш флот</h2></div><span id="my-count" class="count"></span></div><div id="my-board" class="board" role="group" aria-label="Ваше поле"></div><div id="placement-tools"><div class="tools"><button id="random">⤨ Авторасстановка</button><button id="rotate">↻ Горизонтально</button><button id="clear" class="quiet">Очистить</button></div><p id="placement-hint" class="small"></p><button id="ready" class="primary">Флот готов · Начать бой →</button></div></article>
+<article class="board-card enemy-card"><div class="board-heading"><div><span class="step">02 / ЗОНА ПОИСКА</span><h2 id="enemy-name">Соперник</h2></div><span id="enemy-count" class="count"></span></div><div id="enemy-board" class="board" role="group" aria-label="Поле соперника"></div><p id="enemy-hint" class="board-hint">Здесь будет поле вашего соперника.</p></article></div>
+<div class="game-footer"><div class="legend"><span><i class="ship"></i> Корабль</span><span><i class="miss"></i> Промах</span><span><i class="hit"></i> Попадание</span><span><i class="sunk"></i> Потоплен</span></div><button id="surrender" class="quiet">Сдаться</button><button id="exit" class="quiet">В меню</button></div>
+</section>
+<div id="notice" role="status" aria-live="polite"></div>
+<details class="rules"><summary>Как играть <span>+</span></summary><p>Флот: один четырёхпалубный, два трёхпалубных, три двухпалубных и четыре однопалубных корабля. Корабли не касаются даже углами. При ручной расстановке нажмите на начальную клетку; клавиша R меняет направление. После подтверждения обоих игроков сервер выбирает первого. Попадание даёт дополнительный выстрел, промах передаёт ход. Потопите все корабли противника, чтобы победить.</p></details>
+</main><footer>Голландский штурвал 2.0 <span>Хорошая стратегия начинается с тишины.</span> 2026</footer>
+</body></html>
